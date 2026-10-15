@@ -1,0 +1,21 @@
+{
+  "name": "whatsapp-lan-messaging",
+  "title": "تطبيق WhatsApp LAN — مراسلة عبر الشبكة المحلية (APK)",
+  "category": "تطبيقات",
+  "description": "تطبيق مراسلة شبيه بواتساب يعمل عبر الشبكة المحلية LAN/P2P بدون إنترنت. يتضمن ملفي APK جاهزين للتثبيت على أندرويد.",
+  "liveUrl": null,
+  "aliases": [
+    "https://agon-downloads-prod.s3.us-east-1.amazonaws.com/apks/b140aed2-ab51-4b4d-ad6c-5bca512b6b56/agent_1/p2p-agent_1.apk",
+    "https://agon-downloads-prod.s3.us-east-1.amazonaws.com/apks/7346c2e0-a898-435b-aef9-cb4b7903dc5f/agent_2/lan-agent_2.apk"
+  ],
+  "sourceLinks": [],
+  "originalTitle": "تطبيق WhatsApp LAN — مراسلة عبر الشبكة المحلية (APK)",
+  "originalDescription": "تطبيق مراسلة شبيه بواتساب يعمل عبر الشبكة المحلية LAN/P2P بدون إنترنت. يتضمن ملفي APK جاهزين للتثبيت على أندرويد.",
+  "type": "static-website",
+  "archivedAt": "2026-10-15",
+  "readyForHosting": true,
+  "files": [
+    "apk/p2p-agent_1.apk (21425901 bytes, SHA256: b76114e8cd4e6502e5021bd1fd106404fcf6ffd63ee4db35a3420429a599a0c6)",
+    "apk/lan-agent_2.apk (25116593 bytes, SHA256: 936169da856eeedc732bd61b9e785c35a2ee73fa0a29c73c183372a0ee6bfff2)"
+  ]
+}
