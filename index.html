@@ -1,1 +1,140 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>تطبيق WhatsApp LAN — مراسلة عبر الشبكة المحلية (APK)</title><style>body{font-family:system-ui;background:#0b1120;color:#e5e7eb;text-align:center;padding:40px}a{color:#93c5fd}</style></head><body><h1>تطبيق WhatsApp LAN — مراسلة عبر الشبكة المحلية (APK)</h1><p>تطبيق مراسلة شبيه بواتساب يعمل عبر الشبكة المحلية LAN/P2P بدون إنترنت. يتضمن ملفي APK جاهزين للتثبيت على أندرويد.</p><p><a href="apk/p2p-agent_1.apk">تحميل p2p-agent_1.apk</a></p><p><a href="apk/lan-agent_2.apk">تحميل lan-agent_2.apk</a></p></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WhatsApp LAN — مراسلة بلا إنترنت عبر الشبكة المحلية</title>
+<meta name="description" content="تطبيق مراسلة أندرويد يعمل كليًا عبر الشبكة المحلية (LAN/P2P) بدون إنترنت أو رقم هاتف — من فريق أبو نواف.">
+<style>
+  @font-face{font-family:'TajawalX';font-weight:400;font-display:swap;src:url('assets/abunawaf/fonts/tajawal-400-arabic.woff2') format('woff2')}
+  @font-face{font-family:'TajawalX';font-weight:700;font-display:swap;src:url('assets/abunawaf/fonts/tajawal-700-arabic.woff2') format('woff2')}
+  @font-face{font-family:'TajawalX';font-weight:800;font-display:swap;src:url('assets/abunawaf/fonts/tajawal-800-arabic.woff2') format('woff2')}
+  :root{--bg:#060a12;--panel:#0d1727;--line:rgba(148,197,222,.15);--teal:#22d3ee;--teal2:#34d399;--gold:#f5c451;--ink:#e9f3fa;--muted:#8aa3b8;--font:'TajawalX','Tajawal',system-ui,Tahoma,sans-serif}
+  *{box-sizing:border-box}body{margin:0;background:radial-gradient(1000px 500px at 85% -10%,rgba(34,211,238,.1),transparent 60%),radial-gradient(800px 400px at 10% 110%,rgba(52,211,153,.07),transparent 60%),var(--bg);color:var(--ink);font-family:var(--font);line-height:1.7;min-height:100vh}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  header.hero{text-align:center;padding:54px 0 26px}
+  .tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid rgba(52,211,153,.35);background:rgba(52,211,153,.08);color:#9df5cf;font-size:12px;font-weight:700;margin-bottom:16px}
+  h1{margin:0 0 12px;font-size:clamp(26px,5vw,44px);font-weight:800;line-height:1.25;letter-spacing:-.5px}
+  .grad{background:linear-gradient(90deg,var(--teal2),var(--teal) 55%,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{max-width:64ch;margin:0 auto;color:var(--muted);font-size:15px}
+  .cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:14px;border:1px solid transparent;font-weight:800;font-size:14px;cursor:pointer;text-decoration:none;transition:.18s}
+  .btn-primary{background:linear-gradient(135deg,#12b4c9,#0b8ea3);color:#02131b;box-shadow:0 12px 30px rgba(34,211,238,.22)}
+  .btn-primary:hover{transform:translateY(-2px);filter:brightness(1.07)}
+  .btn-ghost{background:rgba(255,255,255,.04);border-color:var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:rgba(34,211,238,.45);background:rgba(34,211,238,.09)}
+  .meta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:18px;font-size:12px;color:var(--muted)}
+  .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:34px 0}
+  .app{position:relative;padding:22px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.012));box-shadow:0 20px 50px rgba(0,0,0,.35)}
+  .app h2{margin:0 0 4px;font-size:18px}
+  .app .id{font-size:11px;color:var(--muted);direction:ltr;text-align:right}
+  .app p{margin:10px 0 16px;font-size:12.5px;color:var(--muted);min-height:46px}
+  .app .row{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .size{font-size:11px;color:var(--muted)}
+  .app .btn{padding:11px 18px;font-size:12.5px}
+  .badge{position:absolute;top:-10px;inset-inline-start:16px;padding:3px 10px;border-radius:999px;background:var(--gold);color:#1a1205;font-size:10px;font-weight:800}
+  section.info{margin:8px 0 30px}
+  section.info h3{font-size:16px;margin:0 0 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .card{padding:16px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.022)}
+  .card b{display:block;font-size:13px;margin-bottom:4px;color:#dff4ff}
+  .card span{font-size:11.5px;color:var(--muted);line-height:1.7}
+  details{border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.02);padding:13px 16px;margin-bottom:9px;font-size:12.5px}
+  details summary{cursor:pointer;font-weight:700;font-size:12.5px}
+  details p{margin:9px 0 0;color:var(--muted);font-size:12px}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:10px}
+  .steps li{counter-increment:s;padding:13px 16px 13px 16px;border-radius:13px;border:1px solid var(--line);background:rgba(255,255,255,.022);font-size:12.5px;position:relative;padding-inline-start:48px}
+  .steps li:before{content:counter(s);position:absolute;inset-inline-start:12px;top:12px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:rgba(34,211,238,.14);border:1px solid rgba(34,211,238,.35);font-size:11px;font-weight:800;color:#bff3ff}
+  .warn{padding:14px 16px;border-radius:13px;border:1px solid rgba(245,196,81,.3);background:rgba(245,196,81,.06);font-size:12px;color:#f4dfae;line-height:1.8}
+  .hash{font-family:ui-monospace,monospace;font-size:10.5px;word-break:break-all;color:#9fb6c8;background:rgba(0,0,0,.3);padding:6px 8px;border-radius:8px;display:block;margin-top:6px}
+  @media(max-width:520px){header.hero{padding-top:34px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <span class="tag">● يعمل بلا إنترنت · LAN / P2P</span>
+    <h1>مراسلة فورية عبر <span class="grad">الشبكة المحلية</span></h1>
+    <p class="sub">تطبيق أندرويد للمراسلة الصوتية والنصية بين الأجهزة على نفس شبكة الواي-فاي — بلا رقم هاتف، بلا خادم، وبلا اتصال بالإنترنت. الأنسب للسفر، المخيمات، الفعاليات، والمناطق منخفضة التغطية.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#downloads">تحميل التطبيق ↓</a>
+      <a class="btn btn-ghost" href="#how">طريقة الاستخدام</a>
+      <a class="btn btn-ghost" href="https://github.com/abunoafceh8-commits" target="_blank" rel="noopener noreferrer">الكود على GitHub</a>
+    </div>
+    <div class="meta-row">
+      <span>✓ أندرويد 8.0+</span><span>✓ حجم صغير</span><span>✓ بلا إعلانات</span><span>✓ بلا أذونات غير ضرورية</span><span>✓ من فريق أبو نواف</span>
+    </div>
+  </header>
+
+  <div class="apps" id="downloads">
+    <article class="app">
+      <span class="badge">مُستحسن</span>
+      <h2>LAN Agent</h2>
+      <div class="id">lan-agent_2.apk</div>
+      <p>النسخة الكاملة: اكتشاف تلقائي للأجهزة، محادثات جماعية، إرسال ملفات وصور، وإشعارات فورية — كل ذلك داخل الشبكة المحلية.</p>
+      <div class="row">
+        <span class="size">24 MB · v2</span>
+        <a class="btn btn-primary" href="apk/lan-agent_2.apk" download>تحميل APK</a>
+      </div>
+    </article>
+    <article class="app">
+      <h2>P2P Agent</h2>
+      <div class="id">p2p-agent_1.apk</div>
+      <p>نسخة خفيفة تركّز على الاتصال المباشر بين جهازين (Peer-to-Peer) عبر الشبكة نفسها، مناسبة للأجهزة القديمة.</p>
+      <div class="row">
+        <span class="size">20.4 MB · v1</span>
+        <a class="btn btn-ghost" href="apk/p2p-agent_1.apk" download>تحميل APK</a>
+      </div>
+    </article>
+  </div>
+
+  <section class="info" id="how">
+    <h3>التثبيت في ثلاث خطوات</h3>
+    <ol class="steps">
+      <li>حمّل ملف <b>APK</b> المناسب من الأعلى.</li>
+      <li>من إعدادات أندرويد اسمح بـ «تثبيت التطبيقات من مصادر غير معروفة» لمتصفحك أو مدير الملفات.</li>
+      <li>افتح الملف وثبّت، ثم شغّل التطبيق واسمح بأذونات الشبكة المحلية فقط.</li>
+    </ol>
+  </section>
+
+  <section class="info">
+    <h3>لماذا هذه الأداة؟</h3>
+    <div class="grid">
+      <div class="card"><b>بلا إنترنت</b><span>الاتصال يتم جهازًا لجهاز عبر الراوتر المحلي أو نقطة اتصال مباشرة (Hotspot).</span></div>
+      <div class="card"><b>بلا تسجيل</b><span>لا رقم هاتف، لا بريد، لا خادم وسيط — هوية محلية على الجهاز فقط.</span></div>
+      <div class="card"><b>خصوصية بالتصميم</b><span>الرسائل لا تغادر شبكتك المحلية إطلاقًا، ولا تُخزَّن على أي خدمة سحابية.</span></div>
+      <div class="card"><b>جاهز للطوارئ</b><span>يعمل في الكوارث ومناطق انقطاع الشبكة والأماكن النائية.</span></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <h3>أسئلة شائعة</h3>
+    <details><summary>هل يحتاج التطبيق إلى إنترنت نهائيًا؟</summary><p>لا. يكفي أن تكون الأجهزة على نفس الشبكة المحلية. الإنترنت غير مطلوب للاكتشاف أو الإرسال.</p></details>
+    <details><summary>هل يمكن لشخص خارج شبكتي رؤية رسائلي؟</summary><p>لا؛ التطبيق يتصل عبر عناوين IP المحلية داخل الشبكة فقط. ننصح دائمًا باستخدام كلمة مرور قوية لشبكة الواي-فاي.</p></details>
+    <details><summary>لماذا يظهر تحذير «مصدر غير معروف»؟</summary><p>لأن التطبيق يُوزَّع مباشرة (سايد-لود) وليس عبر Google Play. تحقّق من بصمة الملف (SHA-256) أدناه إن أردت التحقق من السلامة.</p></details>
+  </section>
+
+  <section class="info">
+    <h3>التحقق من سلامة الملفات</h3>
+    <div class="warn">
+      تحقّق دائمًا من بصمة SHA-256 بعد التنزيل قبل التثبيت. لتوليدها على الحاسوب:
+      <span class="hash">sha256sum apk/lan-agent_2.apk</span>
+<!-- HASHES:START -->
+      <span class="hash">lan-agent_2.apk — SHA-256:<br>936169da856eeedc732bd61b9e785c35a2ee73fa0a29c73c183372a0ee6bfff2</span>
+      <span class="hash">p2p-agent_1.apk — SHA-256:<br>b76114e8cd4e6502e5021bd1fd106404fcf6ffd63ee4db35a3420429a599a0c6</span>
+<!-- HASHES:END -->
+    </div>
+  </section>
+
+</div>
+<!-- abunawaf:begin — طبقة التعزيز © 2026 أبو نواف · MIT -->
+  <meta name="abunawaf:name" content="WhatsApp LAN">
+  <meta name="abunawaf:tagline" content="مراسلة عبر الشبكة المحلية (APK)">
+  <meta name="abunawaf:category" content="تطبيقات · أندرويد">
+  <meta name="abunawaf:polish" content="0">
+  <meta name="abunawaf:engine" content="2.0.0">
+  <meta name="abunawaf:directory" content="0">
+  <script defer src="assets/abunawaf/abunawaf-enhance.js" data-abunawaf="2.0.0"></script>
+  <!-- abunawaf:end -->
+</body>
+</html>

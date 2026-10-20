@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://whatsapp-lan-messaging.vercel.app/sitemap.xml

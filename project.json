@@ -17,5 +17,24 @@
   "files": [
     "apk/p2p-agent_1.apk (21425901 bytes, SHA256: b76114e8cd4e6502e5021bd1fd106404fcf6ffd63ee4db35a3420429a599a0c6)",
     "apk/lan-agent_2.apk (25116593 bytes, SHA256: 936169da856eeedc732bd61b9e785c35a2ee73fa0a29c73c183372a0ee6bfff2)"
-  ]
+  ],
+  "enhanced": {
+    "engine": "AbuNawaf Enhance",
+    "version": "2.0.0",
+    "author": "Abu Nawaf — أبو نواف (Ethical Hacker)",
+    "year": 2026,
+    "license": "MIT",
+    "features": [
+      "brand-bar",
+      "command-palette",
+      "a11y",
+      "security-headers",
+      "self-hosted-fonts",
+      "pwa-manifest",
+      "json-ld",
+      "social-cards",
+      "hardened-apis"
+    ],
+    "hub": "https://abu-nawaf-hub.vercel.app"
+  }
 }
